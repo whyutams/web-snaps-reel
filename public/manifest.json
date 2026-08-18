@@ -1,8 +1,10 @@
 {
-  "name": "Snaps Reel - Vertical Video Feed",
+  "id": "/",
+  "name": "Snaps Reel PWA",
   "short_name": "Snaps Reel",
-  "description": "Short vertical video feed web application in TikTok / Reels style.",
+  "description": "Web aplikasi video vertikal full-screen gaya TikTok / Reels PWA",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#000000",
