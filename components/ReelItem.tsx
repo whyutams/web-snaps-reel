@@ -111,7 +111,7 @@ export const ReelItem: React.FC<ReelItemProps> = ({
     }
   };
 
-  // Toggle Like button handler (No toast notifications)
+  // Toggle Like button handler
   const handleToggleLike = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (isLiked) {
@@ -123,18 +123,18 @@ export const ReelItem: React.FC<ReelItemProps> = ({
     }
   };
 
-  // Follow creator toggle handler (No toast notifications)
+  // Follow creator toggle handler
   const handleToggleFollow = (e: React.MouseEvent) => {
     e.stopPropagation();
     setIsFollowing((prev) => !prev);
   };
 
-  // Comment click handler (No toast notifications)
+  // Comment click handler
   const handleCommentClick = (e: React.MouseEvent) => {
     e.stopPropagation();
   };
 
-  // Share click handler (No toast notifications)
+  // Share click handler
   const handleShareClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (navigator.share) {
@@ -149,7 +149,7 @@ export const ReelItem: React.FC<ReelItemProps> = ({
     <div
       ref={containerRef}
       onClick={handleContainerTap}
-      className="h-screen w-full snap-start relative flex items-center justify-center flex-shrink-0 bg-black overflow-hidden select-none cursor-pointer"
+      className="h-screen w-full snap-start snap-always snap-strict-item relative flex items-center justify-center flex-shrink-0 bg-black overflow-hidden select-none cursor-pointer"
     >
       {/* Video Element */}
       <video

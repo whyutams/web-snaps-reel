@@ -17,6 +17,7 @@ html, body {
   overflow: hidden;
   user-select: none;
   -webkit-user-select: none;
+  overscroll-behavior-y: contain;
 }
 
 /* Hide scrollbar */
@@ -27,6 +28,13 @@ html, body {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Enforce strict single-video snap stopping regardless of aggressive scroll speed */
+.snap-strict-item {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  -webkit-scroll-snap-stop: always;
 }
 
 /* Spinning animation for vinyl audio record */
